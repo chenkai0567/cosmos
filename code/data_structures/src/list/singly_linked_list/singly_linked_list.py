@@ -21,9 +21,9 @@ class LinkedList:
     def size(self):
         cur_node = self.head
         length = 0
-        while current_head != None:
+        while cur_node != None:
             length += 1
-            cur_node = current_head.get_next()
+            cur_node = cur_node.get_next()
         return length
 
     def search(self, data):
