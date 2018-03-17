@@ -41,13 +41,13 @@ class LinkedList:
         while cur_node != None:
             if cur_node.get_data() == data:
                 if cur_node == self.head:
-                    self.head = current.get_next()
+                    self.head = cur_node.get_next()
                 else:
-                    next_node = current.get_next()
+                    next_node = cur_node.get_next()
                     prev_node.set_next(next_node)
                 return cur_node
             prev_node = cur_node
-            cur_node = cur.get_next()
+            cur_node = cur_node.get_next()
         return None
 
     def print_list(self):
